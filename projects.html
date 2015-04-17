@@ -6,8 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="The personal website of Angel Gao, a computer science student at the University of Waterloo.">
+    <meta name="author" content="Angel Gao">
+    <meta name="keywords" content="Angel,Gao,Computer Science, Software, Engineering, university, waterloo, blog">
 
     <title>Angel Gao - Projects</title>
 
@@ -16,6 +17,7 @@
 
     <!-- Custom CSS -->
     <link href="css/clean-blog.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -87,7 +89,35 @@
 
     <!-- Main Content -->
     <div class="container">
-        <div class="row field">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#SlackSlamModal" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/SlackSlam.PNG" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Slack Slam</h4>
+                    <p class="text-muted">A simple-to-use Slack integration part of the top 10 in EngHack2015.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#WebsiteModal" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="img/portfolio/website.PNG" class="img-responsive" alt="">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Website/Blog</h4>
+                    <p class="text-muted">My personal website and blog.</p>
+                </div>
+            </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#CDNModal" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
@@ -131,20 +161,6 @@
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#GraceHopperModal" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/GHC.png" class="img-responsive" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Grace Hopper Celebration</h4>
-                    <p class="text-muted">Attendee @ Grace Hopper Celebration for women in computer science. (Phoenix, Arizona)</p>
-                </div>
-            </div>
-                            <div class="col-md-4 col-sm-6 portfolio-item">
                 <a href="#BattleshipModal" class="portfolio-link" data-toggle="modal">
                     <div class="portfolio-hover">
                         <div class="portfolio-hover-content">
@@ -164,6 +180,66 @@
     <hr>
 
     <!-- Portfolio Modals -->
+
+    <!-- Website Modal  -->
+    <div class="portfolio-modal modal fade" id="WebsiteModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Personal Website</h2>
+                            <p class="item-intro text-muted">A personal website and blog.</p>
+                            <p>A dynamic website written with AngularJS and Bootstrap. The website is hosted on Github, and the blog is created using HTTP requests to the Wordpress API.</p>
+                            <a href="http://www.github.com/angelgao/angelgao.github.io" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SlackSlam Modal  -->
+    <div class="portfolio-modal modal fade" id="SlackSlamModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Slack Slam</h2>
+                            <p class="item-intro text-muted">A Slack Integration providing an easy-access key-value store.</p>
+                            <p>A Ruby on Rails app that uses Webhooks to provide a key-value store for users. The users are authenticated using OAuth, and they can save values (such as phrases or gifs) to a corresponding keyword.</p>
+                            <a href="http://www.github.com/angelgao/angelgao.github.io" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="CarPalModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -210,7 +286,12 @@
                             <h2>Battleship</h2>
                             <p class="item-intro text-muted">The classic game recreated using C# as multi-player over the LAN.</p>
                             <p>As a final project for senior year, this project was created over 4 months, with a final presentation and demo. It was developed by me and a partner using the C# language with Visual Studio.</p>
-                            <a href="https://github.com/angelgao/BattleShip/" target="github"><button type="button" class="btn btn-primary">See it on Github!</button></a>
+                            <a href="http://www.github.com/angelgao/battleship" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +341,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Content Delivery Network</h2>
                             <p class="item-intro text-muted">A proof of concept project that mimics a content delivery network made for Metrolinx testing.</p>
-                            <p>A web solution of MCV web applications developed with ASP.net. It consists of 3 layers: a WCF (Windows Communication Foundation) web service, a DMZ layer and an edge layer client. Information is communicated using <b>SignalR<b> hubs so that it can be displayed in the edge layer in real-time, and new input is stored in databases through the WCF service. I have also implemented a feature to dynamically change the communication protocol (basic HTTP, WS HTTP, Net.Tcp) used by the WCF service.</p>
+                            <p>A web solution of MCV web applications developed with ASP.net. It consists of 3 layers: a WCF (Windows Communication Foundation) web service, a DMZ layer and an edge layer client. Information is communicated using SignalR hubs so that it can be displayed in the edge layer in real-time, and new input is stored in databases through the WCF service. I have also implemented a feature to dynamically change the communication protocol (basic HTTP, WS HTTP, Net.Tcp) used by the WCF service.</p>
                             <br>
                             <p>I performed various time tests to determine the efficiency of the combination of these technologies. The data collected will help in making decisions regarding which technologies to use in future Metrolinx web applications.</p>
                     </div>
@@ -330,7 +411,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="http://www.github.com/angelgao">
+                            <a href="http://www.github.com/angelgao" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -338,7 +419,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://ca.linkedin.com/in/angelgao">
+                            <a href="http://ca.linkedin.com/in/angelgao" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -346,10 +427,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://stackoverflow.com/users/4525565/angel-gao">
+                            <a href="http://stackoverflow.com/users/4525565/angel-gao" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-stackoverflow fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
