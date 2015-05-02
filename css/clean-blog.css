@@ -27,6 +27,7 @@ h6 {
 }
 a {
   color: #404040;
+  cursor: pointer;
 }
 a:hover,
 a:focus {
