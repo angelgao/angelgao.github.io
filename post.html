@@ -62,7 +62,7 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="post.html">Sample Post</a>
+                        <a href="projects.html">Projects</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -103,7 +103,9 @@
     <hr>
 
     <!-- Disqus Comments -->
-    <div id="disqus_thread"></div>
+    <div class="container">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="disqus_thread"></div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -151,6 +153,23 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
 
+
+    <script type="text/javascript">
+      var query = window.location.hash;
+      var args = query.split("=");
+
+      /* * * DISQUS CONFIGURATION VARIABLES* * */
+      var postId = args[1];
+      var disqus_shortname = 'angelgao';
+      var disqus_identifier = 'testing'+ postId;
+      var disqus_url = "http://www.angelgao.com/posts/"+postId;
+
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
 
 </body>
 
